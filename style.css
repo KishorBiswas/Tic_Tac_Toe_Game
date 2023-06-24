@@ -1,0 +1,115 @@
+/* Google fonts Link */
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(6, 199, 6), rgb(235, 14, 235));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 45px auto;
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-radius: 2px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 3px 5px #000;
+    color: aqua;
+    cursor: pointer;
+    transition:  all 0.5s;
+    transform-origin:right top;
+}
+
+.box:hover{
+    background: rgba(147, 112, 216, 0.541);
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9){
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9){
+    border-bottom: none;
+}
+
+.header_text{
+    font-size:50px;
+    color:#F6FA70;
+    text-shadow: 2px 5px 5px #000,  4px 7px 8px #8b3b1b;
+    padding: 5px 30px;
+    border-radius:  65px;
+}
+
+h2{
+    font-size: 25px;
+    color:#F6FA70;
+    text-shadow: 2px 5px 5px #000,  4px 7px 8px #8b3b1b;
+    
+}
+
+h2 span{
+    color: #FFEA20;
+}
+
+#reset{
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(55deg,rgb(6, 199, 6), #ED50F1);
+    box-shadow: 0px 5px 6px #504545;
+    color: #FFED00;
+    border-radius: 25px;
+    text-shadow: 1px 2px 3px #000;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+    .header_text{
+        font-size: 30px;
+        padding: 5px 20px;
+    }
+    .container{
+        margin: 60px auto;
+        
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+}
